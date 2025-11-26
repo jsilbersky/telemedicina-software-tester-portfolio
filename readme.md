@@ -255,11 +255,6 @@ Z pohledu QA:
 - cit pro **edge cases**, které odhalují slabá místa aplikace.
 - základní znalosti **automatizovaného testování** v Cypress.
 
-Z pohledu domény:
-
-- pochopení, že ve zdravotnictví je důležitá nejen funkčnost, ale i **srozumitelnost a bezpečnost**,
-- zkušenost s prací s citlivými daty lékařů a pacientů.
-
 ---
 
 ## Základy automatizace (Cypress)
