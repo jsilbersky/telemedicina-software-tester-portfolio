@@ -1,7 +1,7 @@
 # Telemedicína – software tester portfolio
 
 Telemedicína je způsob, jak poskytovat zdravotní péči na dálku pomocí digitálních nástrojů. Aplikace v mobilu nebo prohlížeči není jen doplněk, ale často hlavní platforma, přes kterou se pacient spojí s lékařem.
-Když v takové aplikaci něco nefunguje, není to jen „bug v appce“, ale reálné riziko, že se pacient nedovolá, nedostane recept nebo důležitou informaci včas.
+Když v takové aplikaci něco nefunguje, hrozí riziko, že se pacient nedovolá, nedostane recept nebo důležitou informaci včas.
 
 Tento repozitář je **anonymizovaná case study** z reálného projektu, kde jsem pracoval jako **software tester** na telemedicínské platformě (mobilní aplikace + web) více než dva roky.  
 Neobsahuje žádný kód ani interní data – zaměřuje se na **způsob uvažování, typy testů a příklady scénářů**.
@@ -58,7 +58,7 @@ Pokud pacient zadal hodnotu výrazně mimo běžné rozmezí, aplikace ho **ihne
 
 ---
 
-## Proč je QA v telemedicíně tak důležité
+## Proč je QA v telemedicíně důležité
 
 Chyba v telemedicíně může znamenat, že se pacient:
 
@@ -73,7 +73,7 @@ Z pohledu testování to znamená:
 - **více trhů a jazyků** – jiné formáty dat, jiné právní texty, různé typy uživatelů,
 - různé **role v systému** (pacient, lékař, sestra, administrátor) a jejich oprávnění.
 
-Tester tu není jen „hledač bugů“, ale i člověk, který pomáhá hlídat, aby aplikace byla pro uživatele srozumitelná a dobře ovladatelná. Jak pro lékaře, tak pro pacienty.
+Tester zde není jen „hledač bugů“, ale i člověk, který pomáhá hlídat, aby aplikace byla pro uživatele srozumitelná a dobře ovladatelná. Jak pro lékaře, tak pro pacienty.
 
 ---
 
@@ -90,6 +90,7 @@ Zodpovědnosti:
 - ověřování notifikací (push, e-mail),
 - zapisování bugů a komunikace s vývojáři,
 - zpětná vazba k použitelnosti a chování aplikace z pohledu běžného uživatele,
+- základy testování API pomocí Dev Tools,
 - první zkušenost s **automatizací – jednoduchý E2E test registračního flow v Cypressu**.
 
 ---
@@ -161,7 +162,7 @@ Níže několik typických scénářů (anonymizovaně):
 - že dorazí upozornění (push / e-mail),
 - otestování průběhu videohovoru.
 
-### 2️⃣ Lékař zvládne celý tok konzultace
+### 2️⃣ Základní lékařské workflow
 
 - přihlášení do lékařské části,
 - zobrazení seznamu konzultací,
@@ -233,12 +234,6 @@ Před releasy jsem procházel sadu hlavních scénářů:
 - historie konzultací a dokumentů,
 - vybrané scénáře z diabetologického modulu,
 - základní nastavení a profil.
-
-Při prioritizaci jsem se ptal:
-
-- co má **největší dopad na pacienta nebo lékaře**, když to přestane fungovat,
-- co se v aktuálním releasu nejvíce měnilo,
-- kde je nejvíc integrací (video, notifikace, platby, speciální moduly).
 
 ---
 
@@ -327,13 +322,6 @@ describe('Registration flow – web telemedicine app', () => {
 });
 ```
 
-## Jak na sobě pracuji dál
-
-Na tento základ navazuji:
-
-- učím se automatizaci testů (aktuálně Playwright – začínám u jednoduchých E2E scénářů),
-- zajímám se o API, performance testování a základní security principy (OWASP pohled),
-- buduju si vlastní QA portfolio (např. pro svůj vedlejší projekt Gaminute, kde si nové nástroje zkouším).
 
 ## Kontakt
 LinkedIn: https://www.linkedin.com/in/jirisilbersky
