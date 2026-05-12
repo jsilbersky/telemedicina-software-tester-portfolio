@@ -42,7 +42,7 @@ Testovaný produkt byl **telemedicínský ekosystém**, který propojoval:
   - nemocnice a kliniky (specializované moduly, např. onkologie).
 
 Platforma byla nasazena ve více zemích:  
-🇨🇿 Česko, 🇸🇰 Slovensko, 🇭🇺 Maďarsko, 🇵🇱 Polsko, 🇷🇸 Srbsko a vybrané státy Latinské Ameriky (Kolumbie, Ekvádor, Mexiko, Peru).  
+Česko, Slovensko, Maďarsko, Polsko, Srbsko a vybrané státy Latinské Ameriky (Kolumbie, Ekvádor, Mexiko, Peru).  
 Tomu odpovídalo i **vícejazyčné UI a různé lokální požadavky**.
 
 ### Specializovaný modul – péče o diabetiky
